@@ -48,9 +48,12 @@ footer p {
 }
 
 /* Estilos para el encabezado */
-header {
+#header {
   background-color: #4BA3C3;
   color: #fff;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 
 .navbar-brand {
@@ -106,6 +109,10 @@ header {
 }
 .card img {
   height: 50%;
+}
+
+main {
+  margin-top: 82px;
 }
 
 /*# sourceMappingURL=styles.css.map */

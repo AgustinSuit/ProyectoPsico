@@ -1,7 +1,12 @@
 /* Estilos para el encabezado */
-header {
+
+#header{
     background-color: $colorPrincipal;
     color: #fff;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+
 }
 
 .navbar-brand {
