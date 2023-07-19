@@ -78,6 +78,15 @@ footer p {
   margin-left: 15px;
 }
 
+main {
+  margin-top: 82px;
+}
+
+@media (min-width: 420px) and (max-width: 992px) {
+  main {
+    margin-top: 0px;
+  }
+}
 /* Estilos específicos para la sección de Servicios */
 .servicios ul {
   list-style-type: none;
@@ -109,10 +118,6 @@ footer p {
 }
 .card img {
   height: 50%;
-}
-
-main {
-  margin-top: 82px;
 }
 
 /*# sourceMappingURL=styles.css.map */

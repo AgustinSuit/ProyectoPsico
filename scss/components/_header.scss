@@ -1,6 +1,6 @@
 /* Estilos para el encabezado */
 
-#header{
+#header {
     background-color: $colorPrincipal;
     color: #fff;
     position: fixed;
@@ -30,4 +30,14 @@
     color: #fff;
     text-decoration: none;
     margin-left: 15px;
+}
+
+main {
+    margin-top: 82px;
+}
+
+@media(min-width:420px) and (max-width:992px) {
+    main {
+        margin-top: 0px;
+    }
 }
