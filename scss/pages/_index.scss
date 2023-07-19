@@ -1,0 +1,9 @@
+/* Estilos específicos para la sección de Servicios */
+.servicios ul {
+    list-style-type: none;
+}
+
+.servicios li:before {
+    content: "\2022";
+    margin-right: 10px;
+}

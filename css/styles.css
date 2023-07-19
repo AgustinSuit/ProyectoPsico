@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* Reset de estilos para evitar inconsistencias entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Estilos para el cuerpo principal */
+main {
+  padding: 40px 0;
+}
+
+section {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+section h2 {
+  margin-bottom: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+footer p {
+  margin: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: aquamarine;
+  color: black;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+}
+.navbar-brand img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+/* Estilos específicos para la sección de Servicios */
+.servicios ul {
+  list-style-type: none;
+}
+
+.servicios li:before {
+  content: "•";
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
