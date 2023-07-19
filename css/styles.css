@@ -85,4 +85,13 @@ header {
   text-shadow: 10px 10px 10px black;
 }
 
+.acercaDe {
+  display: flex;
+  flex-direction: column;
+}
+.acercaDe h2,
+.acercaDe p {
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
