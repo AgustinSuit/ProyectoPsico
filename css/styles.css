@@ -27,6 +27,15 @@ section h2 {
   margin-bottom: 10px;
 }
 
+.img-background {
+  background-image: url("../img/background.png");
+  resize: both;
+  background-color: #F9C784;
+  overflow: auto;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 /* Estilos para el pie de página */
 footer {
   background-color: #4BA3C3;
@@ -85,13 +94,10 @@ header {
   text-shadow: 10px 10px 10px black;
 }
 
-.acercaDe {
-  display: flex;
-  flex-direction: column;
-}
-.acercaDe h2,
-.acercaDe p {
-  text-align: center;
+.card {
+  background-color: rgba(75, 163, 195, 0.7333333333);
+  margin-inline: auto;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

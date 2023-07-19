@@ -27,8 +27,19 @@ body {
 /* Estilos para el cuerpo principal */
 section {
     border-bottom: 1px solid #ccc;
-    h2{
+
+    h2 {
         margin-bottom: 10px;
     }
 }
 
+// Background image
+
+.img-background {
+    background-image: url("../img/background.png");
+    resize: both;
+    background-color: $colorAcento;
+    overflow: auto;
+    background-attachment: fixed;
+    background-size: cover;
+}
