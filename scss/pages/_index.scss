@@ -7,3 +7,15 @@
     content: "\2022";
     margin-right: 10px;
 }
+
+.carousel-item{
+    img{
+        object-fit: cover;
+        height: 800px;
+    }
+    
+    h2,
+    p{
+        text-shadow: 10px 10px 10px black;
+    }
+}

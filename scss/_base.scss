@@ -1,3 +1,9 @@
+// Variables
+$colorPrincipal: #4BA3C3;
+$colorSecundario: #7FB685;
+$colorAcento: #F9C784;
+$colorFondo: #FFFFFF;
+
 /* Reset de estilos para evitar inconsistencias entre navegadores */
 * {
     margin: 0;
@@ -9,6 +15,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: &$colorFondo;
 }
 
 .container-fluid {
@@ -18,12 +25,7 @@ body {
 }
 
 /* Estilos para el cuerpo principal */
-main {
-    padding: 40px 0;
-}
-
 section {
-    padding: 20px;
     border-bottom: 1px solid #ccc;
     h2{
         margin-bottom: 10px;
