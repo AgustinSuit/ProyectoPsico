@@ -28,7 +28,7 @@ section h2 {
 }
 
 .img-background {
-  background-image: url("../img/background.png");
+  background-image: url("../img/background.jpg");
   resize: both;
   background-color: #F9C784;
   overflow: auto;
@@ -94,10 +94,18 @@ header {
   text-shadow: 10px 10px 10px black;
 }
 
+.card-group {
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
 .card {
   background-color: rgba(75, 163, 195, 0.7333333333);
   margin-inline: auto;
   margin-top: 10px;
+}
+.card img {
+  height: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */

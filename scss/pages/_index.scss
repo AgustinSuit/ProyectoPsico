@@ -20,8 +20,16 @@
     }
 }
 
+.card-group{
+    gap:10px;
+    margin-bottom: 10px;
+}
+
 .card{
     background-color: #4ba3c3bb;
     margin-inline: auto;
     margin-top: 10px;
+    img{
+        height: 50% ;
+    }
 }
