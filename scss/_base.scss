@@ -33,6 +33,38 @@ section {
     }
 }
 
+// Gestor Turnos Estilos
+
+#GestorTurno {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(75, 163, 195, 0.7333333333);
+    padding: 10px;
+    height: 100%;
+    margin-bottom: 10px;
+
+    #opciones {
+        display: flex;
+        padding: 10px;
+        margin: 5px;
+        justify-content: flex-end;
+        gap: 8px;
+    }
+
+    .Inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .EstiloInput{
+            border-radius: 10px;
+            padding: 5px;
+        }
+    }
+}
+
+
 // Background image
 
 .img-background {
