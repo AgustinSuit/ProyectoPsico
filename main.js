@@ -68,6 +68,7 @@ function VerTurnos() {
             turnoItem.textContent = `Nombre: ${paciente.Nombre}, Día del turno: ${paciente.DiaTurno}, Hora del turno: ${paciente.HoraTurno}, Motivo de consulta: ${paciente.MotivoConsulta}`;
 
             const botonEliminar = document.createElement('button');
+            botonEliminar.classList.add("btn", "btn-light")
             botonEliminar.textContent = 'Eliminar';
             botonEliminar.addEventListener('click', () => {
                 EliminarTurno(index);

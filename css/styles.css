@@ -41,19 +41,28 @@ section h2 {
   display: flex;
   padding: 10px;
   margin: 5px;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 8px;
+  width: 100%;
 }
 #GestorTurno .Inputs {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
+  align-items: center;
 }
 #GestorTurno .Inputs .EstiloInput {
   border-radius: 10px;
   padding: 5px;
+  width: 50%;
 }
 
+@media (max-width: 576px) {
+  #GestorTurno {
+    width: 100%;
+  }
+}
 .img-background {
   background-image: url("../img/background.jpg");
   resize: both;
