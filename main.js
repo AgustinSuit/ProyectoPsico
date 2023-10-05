@@ -58,7 +58,7 @@ function AsignarTurno() {
 
 function VerTurnos() {
     const turnosList = document.getElementById('turnosList');
-    turnosList.innerHTML = ''; 
+    turnosList.innerHTML = '';
 
     if (pacientes.length === 0) {
         mostrarMensaje("No hay turnos agendados.");
@@ -68,17 +68,21 @@ function VerTurnos() {
             turnoItem.textContent = `Nombre: ${paciente.Nombre}, Día del turno: ${paciente.DiaTurno}, Hora del turno: ${paciente.HoraTurno}, Motivo de consulta: ${paciente.MotivoConsulta}`;
 
             const botonEliminar = document.createElement('button');
-            botonEliminar.classList.add("btn", "btn-light")
-            botonEliminar.textContent = 'Eliminar';
+            botonEliminar.classList.add("ButtonDelete", "btn", "btn-light")
+            // botonEliminar.textContent = 'Eliminar';
             botonEliminar.addEventListener('click', () => {
                 EliminarTurno(index);
             });
+            const icono = document.createElement('i');
+            icono.classList.add("bi", "bi-trash");
+            botonEliminar.appendChild(icono);
+
 
             turnoItem.appendChild(botonEliminar);
             turnosList.appendChild(turnoItem);
         });
 
-        listaTurnosDiv.style.display = 'block'; 
+        listaTurnosDiv.style.display = 'block';
     }
 }
 

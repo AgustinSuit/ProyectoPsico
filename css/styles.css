@@ -63,6 +63,10 @@ section h2 {
     width: 100%;
   }
 }
+.ButtonDelete {
+  margin-left: 10px;
+}
+
 .img-background {
   background-image: url("../img/background.jpg");
   resize: both;
