@@ -33,7 +33,13 @@ function AsignarTurno() {
     const Horas = ["8:00", "9:00", "10:00"];
 
     if (nombre === '' || motivoConsulta === '') {
-        mostrarMensaje("Por favor, complete todos los campos.");
+        Swal.fire({
+            title: 'Error',
+            text: 'Complete todos los campos',
+            icon: 'error',
+            confirmButtonText: 'Aceptar'
+        })
+
         return;
     }
 
@@ -50,7 +56,12 @@ function AsignarTurno() {
 
         pacientes.push(paciente);
         limpiarCampos();
-        mostrarMensaje(`Turno agendado para el día ${DiaSeleccionado} a las ${HoraSeleccionada} a nombre de ${paciente.Nombre} por el siguiente motivo de consulta: ${paciente.MotivoConsulta}. ¡Te esperamos!`);
+        Swal.fire({
+            title: 'Turno asignado!',
+            text: `Turno agendado para el día ${DiaSeleccionado} a las ${HoraSeleccionada} a nombre de ${paciente.Nombre} por el siguiente motivo de consulta: ${paciente.MotivoConsulta}. ¡Te esperamos!`,
+            icon: 'success',
+            confirmButtonText: 'Aceptar'
+        })
     } else {
         mostrarMensaje("Selección de turno inválida, intente nuevamente.");
     }
@@ -61,7 +72,12 @@ function VerTurnos() {
     turnosList.innerHTML = '';
 
     if (pacientes.length === 0) {
-        mostrarMensaje("No hay turnos agendados.");
+        Swal.fire({
+            title: 'Info',
+            text: 'No hay turnos agendados',
+            icon: 'warning',
+            confirmButtonText: 'Aceptar'
+        })
     } else {
         pacientes.forEach((paciente, index) => {
             const turnoItem = document.createElement('li');
@@ -89,7 +105,12 @@ function VerTurnos() {
 function EliminarTurno(index) {
     pacientes.splice(index, 1);
     VerTurnos();
-    mostrarMensaje("Turno eliminado.");
+    Swal.fire({
+        title: 'Turno Eliminado',
+        text: 'Turno eliminado',
+        icon: 'success',
+        confirmButtonText: 'Aceptar'
+    });
 }
 
 function iniciarGestorTurnos() {
