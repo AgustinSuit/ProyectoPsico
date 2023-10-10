@@ -131,7 +131,6 @@ function cargarTurnosAlmacenados() {
     const turnosGuardados = localStorage.getItem('turnos');
     if (turnosGuardados) {
         pacientes.push(...JSON.parse(turnosGuardados));
-        VerTurnos();
     }
 }
 
