@@ -103,14 +103,24 @@ function VerTurnos() {
 }
 
 function EliminarTurno(index) {
-    pacientes.splice(index, 1);
-    VerTurnos();
     Swal.fire({
-        title: 'Turno Eliminado',
-        text: 'Turno eliminado',
-        icon: 'success',
-        confirmButtonText: 'Aceptar'
-    });
+        title: 'Está seguro de eliminar el turno?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Sí, seguro',
+        cancelButtonText: 'No, no quiero'
+    }).then((result) => {
+
+        if (result.isConfirmed) {
+            pacientes.splice(index, 1);
+            Swal.fire({
+                title: 'Borrado!',
+                icon: 'success',
+                text: 'El turno ha sido eliminado'
+            })
+            VerTurnos();
+        }
+    })
 }
 
 function iniciarGestorTurnos() {
