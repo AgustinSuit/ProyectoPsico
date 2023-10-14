@@ -20,9 +20,6 @@ body {
 }
 
 /* Estilos para el cuerpo principal */
-section {
-  border-bottom: 1px solid #ccc;
-}
 section h2 {
   margin-bottom: 10px;
 }
@@ -32,7 +29,7 @@ section h2 {
   flex-direction: column;
   width: 50%;
   margin: 0 auto;
-  background-color: rgba(75, 163, 195, 0.7333333333);
+  background-color: rgba(165, 148, 189, 0.8);
   padding: 10px;
   height: 100%;
   margin-bottom: 10px;
@@ -76,9 +73,39 @@ section h2 {
   background-size: cover;
 }
 
+#WhatsappButton {
+  position: fixed;
+  bottom: 30px;
+  /* Ajusta la distancia desde la parte inferior como prefieras */
+  right: 20px;
+  /* Ajusta la distancia desde la derecha como prefieras */
+  z-index: 1000;
+  /* Asegura que esté por encima de otros elementos */
+}
+#WhatsappButton a {
+  display: block;
+  width: 60px;
+  /* Ancho del botón */
+  height: 60px;
+  /* Altura del botón */
+  background-color: #25d366;
+  /* Color de fondo de WhatsApp */
+  border-radius: 50%;
+  /* Para hacer un círculo */
+  text-align: center;
+  padding: 10px;
+}
+#WhatsappButton img {
+  width: 40px;
+  /* Ajusta el tamaño del icono de WhatsApp */
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
 /* Estilos para el pie de página */
 footer {
-  background-color: #4BA3C3;
+  background-color: #ae8ed8;
   color: #fff;
   text-align: center;
   padding: 15px;
@@ -89,7 +116,7 @@ footer p {
 
 /* Estilos para el encabezado */
 #header {
-  background-color: #4BA3C3;
+  background-color: #ae8ed8;
   color: #fff;
   position: fixed;
   z-index: 2;
@@ -152,7 +179,7 @@ main {
 }
 
 .card {
-  background-color: rgba(75, 163, 195, 0.7333333333);
+  background-color: rgba(165, 148, 189, 0.8);
   margin-inline: auto;
   margin-top: 10px;
 }
